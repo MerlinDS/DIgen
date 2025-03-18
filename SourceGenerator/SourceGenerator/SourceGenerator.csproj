@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>DIGen.SourceGenerator</AssemblyName>
+        <RootNamespace>DIGen.SourceGenerator</RootNamespace>
+        <Company>MerlinDS</Company>
+        <Product>DIGen.SourceGenerator</Product>
+        <AssemblyVersion>0.1.0</AssemblyVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <OutputPath>..\..\Assets\DIGen\Plugins\SourceGenerator</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.CodeAnalysis" Version="4.3.1" />
+    </ItemGroup>
+
+</Project>
