@@ -6,7 +6,10 @@
         "UnityEditor.TestRunner",
         "DIGen.Runtime",
         "BoundfoxStudios.FluentAssertions",
-        "TNRD.NSubstitute"
+        "TNRD.NSubstitute",
+        "Unity.Burst",
+        "Unity.Collections",
+        "Unity.Logging"
     ],
     "includePlatforms": [
         "Editor"
