@@ -87,5 +87,10 @@ namespace DIGen.Runtime.Bindings
         {
             return new BindingDescriptor(_resolverIndex, _instanceIndex, _lifetime, (byte)(isLazy ? 1 : 0));
         }
+
+        internal BindingDescriptor WithInstanceIndex(int instanceIndex)
+        {
+            return new BindingDescriptor(_resolverIndex, (ushort)instanceIndex, _lifetime, _isLazy);
+        }
     }
 }
